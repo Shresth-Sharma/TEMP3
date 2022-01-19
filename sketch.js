@@ -237,7 +237,7 @@ function getState(){
 }
 function mouseReleased(){
   if(mouseX<ENTER.x+100&&mouseX>ENTER.x-100&&mouseY<ENTER.y+100&&mouseY>ENTER.y-100){
-      if(mouseButton === LEFT){
+      if(mouseButton === LEFT&&gamestate===START){
         gamestate=PLAY;
       }
   } 
